@@ -17,6 +17,8 @@ source $HOME/.vim/init/plug-config/fzf-vim.vim              " Plug 'junegunn/fzf
 source $HOME/.vim/init/plug-config/vim-sneak.vim            " Plug 'justinmk/vim-sneak'
 source $HOME/.vim/init/plug-config/vim-easymotion.vim       " Plug 'easymotion/vim-easymotion'
 source $HOME/.vim/init/plug-config/quickscope.vim           " Plug 'unblevable/quick-scope'
+source $HOME/.vim/init/plug-config/netrw-Lex.vim            " Config for netrw used with Lex command
+source $HOME/.vim/init/plug-config/vim-dirvish.vim          " Plug 'justinmk/vim-dirvish' and Plug 'kristijanhusak/vim-dirvish-git'
 
 "" Setups
 " source $HOME/.vim/init/plug-config/terminus.vim             " Plug 'wincent/terminus'
