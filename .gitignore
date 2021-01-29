@@ -3,4 +3,4 @@ autoload/
 sessions/
 spell/
 plugged/
-coc-settings*
+coc-settings.json
