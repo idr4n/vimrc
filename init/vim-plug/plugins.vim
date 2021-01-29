@@ -29,6 +29,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'aymericbeaumet/vim-symlink'
 Plug 'honza/vim-snippets'
 Plug 'ferrine/md-img-paste.vim'
+Plug 'metakirby5/codi.vim'
 
 "" Formatting
 Plug 'tpope/vim-surround'
@@ -37,6 +38,7 @@ Plug 'tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 
 "" Actions, mappings
 Plug 'mattn/emmet-vim'
