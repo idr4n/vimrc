@@ -23,9 +23,7 @@
   "python.jediEnabled": false,
   "python.autoComplete.addBrackets": true,
   "python.linting.pylintArgs": [
-    "--disable=C0111",
-    "--load-plugins",
-    "pylint_django"
+    "--disable=C0111"
   ],
 
   // tsserver config
