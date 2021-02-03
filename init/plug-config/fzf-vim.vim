@@ -23,7 +23,7 @@ nnoremap <silent> <expr> <C-T> (expand('%') =~ 'coc-explorer' ? "\<c-w>\<c-w>" :
 " nnoremap <silent> <expr> <C-T> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":History\<cr>"
 nnoremap <silent> <expr> <C-B> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
 nnoremap <silent> <expr> <leader>bl (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
-nnoremap <silent> <expr> <leader>s (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":BLines\<cr>"
+nnoremap <silent> <expr> <leader>fs (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":BLines\<cr>"
 nnoremap <silent> <expr> <leader>r (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Rg\<cr>"
 " nmap <C-P>          :Files<CR>
 " nmap <C-T>          :History<CR>

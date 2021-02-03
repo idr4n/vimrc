@@ -25,7 +25,7 @@ set clipboard=unnamed                 " Use system clipboard
 set backspace=indent,eol,start        " Enable Backspace
 set noshowmode                        " don't put a message on the last line
 set laststatus=2                      " shows a status line always
-set showtabline=2                     " shows line with tab page labels
+" set showtabline=2                     " shows line with tab page labels
 set ignorecase                        " the case of normal letters is ignored
 set smartcase                         " ignore case when the pattern contains lowercase letters only
 set nobackup                          " no backup files

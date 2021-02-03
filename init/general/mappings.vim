@@ -10,7 +10,7 @@ inoremap fd <ESC>
 inoremap jk <ESC>
 
 " Quicksave command
-nnoremap <Leader>fs :w<CR>
+nnoremap <Leader>s :w<CR>
 
 " " Move up and down with wrapped lines
 nnoremap k gk
