@@ -68,7 +68,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
 Plug 'machakann/vim-highlightedyank'
 Plug 'itchyny/lightline.vim'
-Plug 'mengelbrecht/lightline-bufferline'
+" Plug 'mengelbrecht/lightline-bufferline'
 
 "" Themes
 Plug 'chriskempson/base16-vim'
