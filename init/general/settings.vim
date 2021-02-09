@@ -32,6 +32,7 @@ set nobackup                          " no backup files
 set nowritebackup                     " no backup file
 set noswapfile                        " no swap files
 " set scrolloff=999                   " keep cursor centered vertically
+set scrolloff=5                       " keep cursor centered vertically
 " set showbreak=↪\                      " line break character for wrapped lines
 " set showbreak=↳\                    " line break character for wrapped lines
 set autowrite                         " saves buffer when changing files

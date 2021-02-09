@@ -24,6 +24,7 @@ nnoremap j gj
 " Jump to start and end of line using the home row keys
 map H ^
 map L $
+map 9 $
 
 " Quit current window
 noremap <Leader>e :quit<CR> 
@@ -48,7 +49,8 @@ inoremap <C-f> <right>
 " swtich buffers with tab
 nnoremap <silent> W           :bnext<CR>
 nnoremap <silent> Q           :bprevious<CR>
-nnoremap <silent> <leader>l   :b#<CR>
+" nnoremap <silent> <leader>l   :b#<CR>
+nnoremap <silent> ga :b#<CR>
 
 " easier indenting of code blocks
 vnoremap < <gv 
@@ -67,6 +69,7 @@ vnoremap ,/ y<C-O>/<C-R>"<CR>
 
 " Duplicate line and comment old line out
 nmap gcy gccyypgcc
+nmap Y gccyypgcc
 " Duplicate and comment selection
 vmap gy gcgvyPgvgc
 
