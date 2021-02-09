@@ -4,6 +4,7 @@
 function! s:PythonWatch()
   if exists('$TMUX')
     execute 'silent !tmux split-window -h -p 40 watch python %'
+    execute 'silent !tmux last-pane'
   else
     rightb vertical terminal ++close ++norestore ++cols=67 watch python %
   endif
