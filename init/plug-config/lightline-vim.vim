@@ -41,7 +41,7 @@ let g:lightline = {
       \   'mytotallines': 'MyTotalLines',
       \ },
       \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
+      \ 'subseparator': { 'left': '|', 'right': '|' }
       \ }
 
 "" Arrow separator
