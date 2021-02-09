@@ -14,7 +14,7 @@
     "json"
   ],
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
-  "suggest.autoTrigger": "none",
+  "suggest.autoTrigger": "always",
   "signature.enable": false,
 
   // python config
