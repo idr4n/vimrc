@@ -7,6 +7,7 @@ function! s:PythonWatch()
     execute 'silent !tmux last-pane'
   else
     rightb vertical terminal ++close ++norestore ++cols=67 watch python %
+    " TODO: add command to switch to last windown (similar to last-pane)
   endif
 endfunction
 
