@@ -8,7 +8,7 @@ syntax enable                         " enable syntax highlighting
 set number                            " sets absolute line numbers
 " set relativenumber                  " sets relative line numbers
 set termguicolors                     " uses highlight-guifg and highlight-guibg attributes in the terminal
-set cursorline                        " highlight current line
+" set cursorline                        " highlight current line
 set mouse=a                           " Enable your mouse
 set wrap                              " Always wrap long lines
 set linebreak                         " Always wrap long lines
@@ -32,6 +32,7 @@ set nobackup                          " no backup files
 set nowritebackup                     " no backup file
 set noswapfile                        " no swap files
 " set scrolloff=999                   " keep cursor centered vertically
+set scrolloff=5                       " keep cursor centered vertically
 " set showbreak=↪\                      " line break character for wrapped lines
 " set showbreak=↳\                    " line break character for wrapped lines
 set autowrite                         " saves buffer when changing files

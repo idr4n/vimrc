@@ -1,10 +1,11 @@
 " General settings
-source $HOME/.vim/init/vim-plug/plugins.vim    " plugins loader using Vim-plug
-source $HOME/.vim/init/general/settings.vim    " general settings
-source $HOME/.vim/init/general/mappings.vim    " general mappings
-source $HOME/.vim/init/general/format.vim      " general formatting
-source $HOME/.vim/init/general/autocmds.vim    " general autocmds (autospelling, run files, etc.)
-source $HOME/.vim/init/general/macvim.vim      " macvim settings
+source $HOME/.vim/init/vim-plug/plugins.vim       " plugins loader using Vim-plug
+source $HOME/.vim/init/general/settings.vim       " general settings
+source $HOME/.vim/init/general/mappings.vim       " general mappings
+source $HOME/.vim/init/general/format.vim         " general formatting
+source $HOME/.vim/init/general/autocmds.vim       " general autocmds (autospelling, run files, etc.)
+source $HOME/.vim/init/general/macvim.vim         " macvim settings
+source $HOME/.vim/init/general/tmux-commands.vim  " TMUX integration with Vim
 
 " Themes settings
 source $HOME/.vim/init/theme-config/base16-vim.vim    " Plug 'chriskempson/base16-vim'

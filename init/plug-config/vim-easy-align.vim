@@ -1,7 +1,7 @@
 " Setting vim-easy-align
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
+xmap gl <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+nmap gl <Plug>(EasyAlign)
 

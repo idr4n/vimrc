@@ -16,7 +16,10 @@ let g:lightline#bufferline#modified = ' ●'
 let g:lightline = {
       \ 'colorscheme': 'powerlineish',
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'gitgutter', 'readonly', 'filename', 'modified' ] ]
+      \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'gitgutter', 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [ 'lineinfo', 'syntastic' ],
+      \              [ 'percent', 'mytotallines' ],
+      \              [ 'fileformat', 'fileencoding', 'filetype' ] ],
       \ },
       \ 'component': {
       \   'lineinfo': '%3l:%-2v%<',
@@ -35,9 +38,10 @@ let g:lightline = {
       \   'gitbranch': 'LightLineGitBranch',
       \   'gitgutter': 'LightLineGitGutter',
       \   'filename': 'FilenameForLightline',
+      \   'mytotallines': 'MyTotalLines',
       \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '|', 'right': '|' }
       \ }
 
 "" Arrow separator
@@ -52,7 +56,13 @@ function! FilenameForLightline()
     " return expand('%')
     " return expand('%:~:h')
     " return winwidth(0) > 70 ? expand('%:~:h') : pathshorten(fnamemodify(expand('%'), ":."))
-    return pathshorten(expand('%:~:h'))
+    return winwidth(0) > 70 ? expand('%') : pathshorten(fnamemodify(expand('%'), ":."))
+    " return pathshorten(expand('%:~:h'))
+endfunction
+
+function! MyTotalLines()
+  " return line('.') . '/' . line('$')
+  return line('$') . "\ue0a1"
 endfunction
 
 function! LightLineGitBranch()
