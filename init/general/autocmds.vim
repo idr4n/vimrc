@@ -53,12 +53,5 @@ augroup AutoRun
     autocmd FileType ruby nnoremap <buffer> ,5 :w<CR>:cd %:p:h<CR>:!ruby %<CR>
     autocmd FileType python nnoremap <buffer> ,5 :w<CR>:cd %:p:h<CR>:!python %<CR>
     autocmd FileType sh nnoremap <buffer> <F5> :w<CR>:cd %:p:h<CR>:!./%<CR>
-    autocmd FileType markdown nnoremap <buffer> <F5> :w<CR>:!open -a Marked\ 2 "%"<CR>
-    autocmd FileType markdown nnoremap <buffer> ,5 :w<CR>:!open -a Marked\ 2 "%"<CR>
-    autocmd FileType markdown nnoremap <buffer> <S-F5> :w<CR>:!pandoc "%" -o "%:r.pdf"<CR>
-    autocmd FileType markdown nnoremap <buffer> <leader>pb :w<CR>:silent
-          \ !pandoc "%" -t beamer -o "%:r.pdf"<CR>
-    " Reveal file in finder without changing the working dir in vim
-    autocmd FileType * nnoremap <buffer> <leader>; :w<CR>:!open -R "%"<CR>
 augroup END
 
