@@ -1,6 +1,23 @@
 " General Commands definitions and corresponding mappings
 
+function! s:NewNote()
+  call inputsave()
+  let s:name = input("Enter note name: ", "", "dir")
+  call inputrestore()
+  let s:name = trim(s:name)
+  if len(s:name) == 0 || isdirectory(s:name)
+    redraw
+    echo 'No name entered!'
+    return
+  endif
+  execute "e ~/Dropbox/Notes-Database/".s:name.".md"
+endfunction
+
+" Create/edit daily note
 command! EditDiary execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%F").".md"
+
+" Create a new note in the Notes-Dabase directory
+command! NewNote call s:NewNote()
 
 " Open markdown file in Marked 2
 command! OpenMarked2 execute '!open -a Marked\ 2 "%"'
@@ -17,6 +34,7 @@ command! RevealInFinder execute '!open -R "%"'
 " mappings
 nmap <leader>di :EditDiary<CR>
 nnoremap <leader>; :RevealInFinder<CR>
+nnoremap <leader>nn :NewNote<CR>
 
 augroup Commands
   autocmd!
