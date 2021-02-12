@@ -56,7 +56,7 @@ function! FilenameForLightline()
     " return expand('%')
     " return expand('%:~:h')
     " return winwidth(0) > 70 ? expand('%:~:h') : pathshorten(fnamemodify(expand('%'), ":."))
-    return winwidth(0) > 70 ? expand('%') : pathshorten(fnamemodify(expand('%'), ":."))
+    return winwidth(0) > 100 ? expand('%') : pathshorten(fnamemodify(expand('%'), ":."))
     " return pathshorten(expand('%:~:h'))
 endfunction
 
