@@ -2,7 +2,8 @@
 
 function! s:RunCommand()
   call inputsave()
-  let s:cmd = input("Enter your shell command: ")
+  " let s:cmd = input('Enter your shell command: _❯ ')
+  let s:cmd = input("_\u276f ")
   call inputrestore()
   let s:cmd = trim(s:cmd)
   if len(s:cmd) == 0 || isdirectory(s:name)
