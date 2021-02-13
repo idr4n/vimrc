@@ -1,5 +1,18 @@
 " General Commands definitions and corresponding mappings
 
+function! s:RunCommand()
+  call inputsave()
+  let s:cmd = input("Enter your shell command: ")
+  call inputrestore()
+  let s:cmd = trim(s:cmd)
+  if len(s:cmd) == 0 || isdirectory(s:name)
+    redraw
+    echo 'No command entered!'
+    return
+  endif
+  execute '!clear && '.s:cmd
+endfunction
+
 function! s:NewNote()
   call inputsave()
   let s:name = input("Enter note name: ", "", "dir")
@@ -12,6 +25,9 @@ function! s:NewNote()
   endif
   execute "e ~/Dropbox/Notes-Database/".s:name.".md"
 endfunction
+
+" Runs shell command
+command! RunCommand call s:RunCommand()
 
 " Create/edit daily note
 command! EditDiary execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%F").".md"
@@ -35,6 +51,7 @@ command! RevealInFinder execute '!clear && open -R "%"'
 nmap <leader>di :EditDiary<CR>
 nnoremap <leader>; :RevealInFinder<CR>
 nnoremap <leader>nn :NewNote<CR>
+nnoremap <leader>cc :RunCommand<CR>
 
 augroup Commands
   autocmd!
