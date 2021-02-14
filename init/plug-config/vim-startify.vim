@@ -3,7 +3,6 @@
 " Startify mappings
 nnoremap <silent> <leader>kf :SClose<CR>
 nnoremap <silent> <leader>gh :Startify<CR>
-nnoremap <C-s> :SLoad<space>
 
 " Where startigy stores sessions
 let g:startify_session_dir = '~/.vim/sessions'
