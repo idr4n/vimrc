@@ -3,7 +3,7 @@
 function! s:RunCommand()
   call inputsave()
   " let s:cmd = input('Enter your shell command: _❯ ')
-  let s:cmd = input("_\u276f ")
+  let s:cmd = input("_\u276f ", "", "shellcmd")
   call inputrestore()
   let s:cmd = trim(s:cmd)
   if len(s:cmd) == 0 || isdirectory(s:name)
@@ -29,6 +29,7 @@ endfunction
 
 " Runs shell command
 command! RunCommand call s:RunCommand()
+command! RunShellCmd call feedkeys(':!clear &&<space>')
 
 " Create/edit daily note
 command! EditDiary execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%F").".md"
@@ -53,6 +54,7 @@ nmap <leader>di :EditDiary<CR>
 nnoremap <leader>; :RevealInFinder<CR>
 nnoremap <leader>nn :NewNote<CR>
 nnoremap <leader>cc :RunCommand<CR>
+nnoremap <leader>cl :RunShellCmd<CR>
 
 augroup Commands
   autocmd!
