@@ -37,5 +37,8 @@
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-  }
+  },
+
+  // Lua
+  "Lua.diagnostics.enable": false,
 }

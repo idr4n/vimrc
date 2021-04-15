@@ -22,6 +22,7 @@ set cindent                           "Like smartindent, but stricter and more c
 set breakindent                       " Every wrapped line will continue visually indented
 " set conceallevel=2                    " how text with the 'conceal' syntax attribute is shown
 set clipboard=unnamed                 " Use system clipboard
+set clipboard=unnamedplus             " Use system clipboard in linux
 set backspace=indent,eol,start        " Enable Backspace
 set noshowmode                        " don't put a message on the last line
 set laststatus=2                      " shows a status line always
