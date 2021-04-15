@@ -69,6 +69,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'machakann/vim-highlightedyank'
 Plug 'itchyny/lightline.vim'
 " Plug 'mengelbrecht/lightline-bufferline'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 "" Themes
 Plug 'chriskempson/base16-vim'
