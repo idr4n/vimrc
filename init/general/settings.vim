@@ -43,3 +43,7 @@ set nohlsearch                        " Turn off highlighting until next search
 set belloff=all                       " set bell off
 let &t_Cs = "\e[4:3m"                 " udercurl for spelling checking
 let &t_Ce = "\e[4:0m"                 " udercurl for spelling checking
+
+" setting so vim colors are shown in ST
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
