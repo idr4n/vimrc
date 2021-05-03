@@ -3,6 +3,8 @@
 " turn on 'detection', 'plugin' and 'indent' at once
 filetype plugin indent on
 
+set t_Co=256
+set background=dark
 " syntax on                           " enable syntax highlighting
 syntax enable                         " enable syntax highlighting
 set number                            " sets absolute line numbers
