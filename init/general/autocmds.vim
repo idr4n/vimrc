@@ -55,3 +55,8 @@ augroup AutoRun
     autocmd FileType sh nnoremap <buffer> <F5> :w<CR>:cd %:p:h<CR>:!./%<CR>
 augroup END
 
+" rasi files (rofi themes files)
+augroup rasi
+  autocmd!
+  au BufNewFile,BufRead /*.rasi setf css
+augroup END

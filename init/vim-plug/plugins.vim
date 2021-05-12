@@ -41,6 +41,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+Plug 'michaeljsmith/vim-indent-object'
 
 "" Actions, mappings
 Plug 'mattn/emmet-vim'
