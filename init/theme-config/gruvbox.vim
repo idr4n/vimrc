@@ -11,7 +11,7 @@ let g:gruvbox_italic='1'
 let g:gruvbox_sign_column='bg0'
 let g:gruvbox_invert_selection='0'
 
-augroup on_change_colorschemQqje
+augroup on_change_colorscheme
   autocmd!
   autocmd ColorScheme * highlight CursorLine guibg=#303030
   " autocmd ColorScheme * highlight CursorLineNr guibg=bg0
