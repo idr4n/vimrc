@@ -49,4 +49,5 @@ source $HOME/.vim/init/plug-config/goyo-vim.vim               " Plug 'junegunn/g
 source $HOME/.vim/init/plug-config/vim-markdown.vim           " Plug 'plasticboy/vim-markdown'
 source $HOME/.vim/init/plug-config/vim-highlightedyank.vim    " Plug 'machakann/vim-highlightedyank'
 source $HOME/.vim/init/plug-config/lightline-vim.vim          " Plug 'itchyny/lightline.vim'
+source $HOME/.vim/init/plug-config/hexokinase-vim.vim         " Plug 'rrethy/vim-hexokinase'
 
