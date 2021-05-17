@@ -9,13 +9,13 @@ set fillchars+=vert:│
 " gsed -ri '/Bold/ s/^([^,]*,){5} "(none)?/\1 "bold/' *vim
 
 function! s:base16_customize() abort
-  call Base16hi("Normal", "", "000000", "", "", "", "") " Backgorund color
+  call Base16hi("Normal", "", "10151a", "", "", "", "") " Backgorund color
   " call Base16hi("LineNr", "585858", "181818", "236", "232", "", "")
-  call Base16hi("LineNr", "383838", "000000", "236", "0", "", "")
-  call Base16hi("CursorLineNr", "585858", "000000", "", "", "none", "")
+  call Base16hi("LineNr", "383838", "10151a", "236", "0", "", "")
+  call Base16hi("CursorLineNr", "585858", "10151a", "", "", "none", "")
   call Base16hi("CursorLine", "", "171717", "", "", "", "")
   call Base16hi("Comment", "", "", "", "", "italic", "")
-  call Base16hi("SignColumn", "", "000000", "", "0", "", "")
+  call Base16hi("SignColumn", "", "10151a", "", "0", "", "")
   call Base16hi("NonText", "5c5c5c", "", "", "", "none", "")
   call Base16hi("ColorColumn", "", "873936", "", "", "", "")
   call Base16hi("Error", "c8c8c8", "", "", "", "", "")
