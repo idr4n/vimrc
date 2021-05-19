@@ -22,6 +22,7 @@ source $HOME/.vim/init/plug-config/vim-easymotion.vim       " Plug 'easymotion/v
 source $HOME/.vim/init/plug-config/quickscope.vim           " Plug 'unblevable/quick-scope'
 source $HOME/.vim/init/plug-config/netrw-Lex.vim            " Config for netrw used with Lex command
 source $HOME/.vim/init/plug-config/vim-dirvish.vim          " Plug 'justinmk/vim-dirvish'
+source $HOME/.vim/init/plug-config/nnn-vim.vim              " Plug 'mcchrish/nnn.vim'
 
 "" Setups
 " source $HOME/.vim/init/plug-config/terminus.vim             " Plug 'wincent/terminus'
@@ -31,6 +32,7 @@ source $HOME/.vim/init/plug-config/devicons.vim             " Plug 'ryanoasis/vi
 source $HOME/.vim/init/plug-config/easyclip.vim             " Plug 'svermeulen/vim-easyclip'
 source $HOME/.vim/init/plug-config/delimitMate.vim          " Plug 'Raimondi/delimitMate'
 source $HOME/.vim/init/plug-config/md-img-paste.vim         " Plug 'ferrine/md-img-paste.vim'
+source $HOME/.vim/init/plug-config/vim-dotoo.vim            " Plug 'dhruvasagar/vim-dotoo'
 
 "" Formatting
 source $HOME/.vim/init/plug-config/vim-easy-align.vim       " Plug 'junegunn/vim-easy-align'

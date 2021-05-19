@@ -60,3 +60,8 @@ augroup rasi
   autocmd!
   au BufNewFile,BufRead /*.rasi setf css
 augroup END
+
+augroup org-dotoo
+  autocmd!
+	au BufRead,BufNewFile /*.org setlocal filetype=dotoo
+augroup END

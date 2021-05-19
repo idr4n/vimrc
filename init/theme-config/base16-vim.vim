@@ -23,6 +23,7 @@ function! s:base16_customize() abort
   call Base16hi("SpellLocal", "873936", "", "", "", "undercurl", "")
   call Base16hi("SpellCap",   "873936", "", "", "", "undercurl", "")
   call Base16hi("SpellRare",  "873936", "", "", "", "undercurl", "")
+  call Base16hi("MatchParen", "E5C078", "10151a", "11", "none",  "bold", "")
 endfunction
 
 augroup on_change_colorschema

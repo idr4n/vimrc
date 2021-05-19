@@ -20,6 +20,7 @@ Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
+Plug 'mcchrish/nnn.vim'
 
 "" Setups
 " Plug 'vim-scripts/scrollfix'
@@ -32,6 +33,7 @@ Plug 'aymericbeaumet/vim-symlink'
 Plug 'honza/vim-snippets'
 Plug 'ferrine/md-img-paste.vim'
 Plug 'metakirby5/codi.vim'
+Plug 'dhruvasagar/vim-dotoo'
 
 "" Formatting
 Plug 'tpope/vim-surround'

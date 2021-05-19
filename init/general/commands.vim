@@ -52,7 +52,7 @@ command! RevealInFinder execute '!clear && open -R "%"'
 " mappings
 nmap <leader>di :EditDiary<CR>
 nnoremap <leader>; :RevealInFinder<CR>
-nnoremap <leader>nn :NewNote<CR>
+nnoremap <leader><S-n> :NewNote<CR>
 nnoremap <leader>cc :RunCommand<CR>
 nnoremap <leader>cl :RunShellCmd<CR>
 

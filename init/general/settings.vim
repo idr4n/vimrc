@@ -3,6 +3,7 @@
 " turn on 'detection', 'plugin' and 'indent' at once
 filetype plugin indent on
 
+set hidden
 set t_Co=256
 set background=dark
 " syntax on                           " enable syntax highlighting
