@@ -1,3 +1,3 @@
-" Plug 'gavinok/spaceway.vim'
+" Plug 'ivanddm/spaceway.vim'
 
 colorscheme spaceway

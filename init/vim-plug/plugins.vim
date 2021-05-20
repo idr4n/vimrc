@@ -87,7 +87,7 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "" Themes
 Plug 'chriskempson/base16-vim'
 Plug 'gruvbox-community/gruvbox'
-Plug 'gavinok/spaceway.vim'
+Plug 'ivanddm/spaceway.vim'
 " Plug 'kaicataldo/material.vim'
 
 

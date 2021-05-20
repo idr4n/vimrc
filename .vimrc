@@ -9,10 +9,10 @@ source $HOME/.vim/init/general/tmux-commands.vim  " TMUX integration with Vim
 source $HOME/.vim/init/general/commands.vim
 
 " Themes settings
-source $HOME/.vim/init/theme-config/base16-vim.vim    " Plug 'chriskempson/base16-vim'
+" source $HOME/.vim/init/theme-config/base16-vim.vim    " Plug 'chriskempson/base16-vim'
 " source $HOME/.vim/init/theme-config/material.vim    " Plug 'kaicataldo/material.vim'
 " source $HOME/.vim/init/theme-config/gruvbox.vim     " Plug 'gruvbox-community/gruvbox'
-" source $HOME/.vim/init/theme-config/spaceway.vim    " Plug 'gavinok/spaceway.vim'
+source $HOME/.vim/init/theme-config/spaceway.vim    " Plug 'ivanddm/spaceway.vim'
 
 " Plugins settings
 "" Search
