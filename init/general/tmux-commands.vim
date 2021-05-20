@@ -14,6 +14,8 @@ endfunction
 function! s:LazyGit()
   if exists('$TMUX')
     execute 'silent !tmux split-window -v -p 70 lazygit'
+  elseif has('nvim')
+    bel 20sp +startinsert | terminal lazygit
   else
     " echohl WarningMsg | echo 'Not running inside a TMUX sessions!' | echohl None
     bel terminal ++close ++norestore ++rows=20 lazygit

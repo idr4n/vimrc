@@ -5,7 +5,11 @@ nnoremap <silent> <leader>kf :SClose<CR>
 nnoremap <silent> <leader>gh :Startify<CR>
 
 " Where startigy stores sessions
-let g:startify_session_dir = '~/.vim/sessions'
+if has('nvim')
+    let g:startify_session_dir = '~/.config/nvim/sessions'
+else
+    let g:startify_session_dir = '~/.vim/sessions'
+endif
 
 " " Some laft padding
 let g:startify_padding_left = 10
@@ -19,9 +23,7 @@ let g:startify_lists = [
 
 let g:startify_bookmarks = [
     \ { 'i': '~/.config/nvim/init.vim' },
-    \ { 't': '~/pCloud/dotfiles/.tmux.conf' },
     \ { 'z': '~/pCloud/dotfiles/.zshrc' },
-    \ { 'n': '~/.config/nvim/init' },
     \ '~/pCloud/Dev',
     \ ]
 
