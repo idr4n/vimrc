@@ -17,7 +17,9 @@ let g:lightline#bufferline#modified = ' ●'
 let g:lightline = {
       \ 'colorscheme': 'spaceway',
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'gitgutter', 'readonly', 'filename', 'modified' ] ],
+      \   'left': [ [ 'mode', 'spell', 'paste' ], 
+      \             [ 'gitgutter', 'gitbranch', 'readonly' ],
+      \             [ 'filename', 'modified' ] ],
       \   'right': [ [ 'lineinfo', 'syntastic' ],
       \              [ 'mytotallines' ],
       \              [ 'percent' ],
@@ -26,6 +28,8 @@ let g:lightline = {
       \ },
       \ 'component': {
       \   'lineinfo': '%3l:%-2v%<',
+      \   'percent': "%3p%% 靖",
+      \   'spell': 'SPELL [%{toupper(&spell?&spelllang:"")}]',
       \ },
       \ 'tabline': {
       \   'left': [ ['buffers'] ],
@@ -42,10 +46,10 @@ let g:lightline = {
       \   'gitgutter': 'LightLineGitGutter',
       \   'filename': 'FilenameForLightline',
       \   'mytotallines': 'MyTotalLines',
-      \   'charcode': 'LightlineCharcode'
+      \   'charcode': 'LightlineCharcode',
       \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '|', 'right': '|' }
+      \ 'separator': { 'left': '  ', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '|' }
       \ }
 
 "" Arrow separator

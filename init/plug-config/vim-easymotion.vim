@@ -16,4 +16,5 @@ function! s:config_easyfuzzymotion(...) abort
 endfunction
 noremap <silent><expr> <leader>/ incsearch#go(<SID>config_easyfuzzymotion())
 
+nmap tt <Plug>(easymotion-s2)
 
