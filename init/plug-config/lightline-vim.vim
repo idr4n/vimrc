@@ -12,14 +12,17 @@ let g:lightline#bufferline#modified = ' ●'
 " 'colorscheme': 'gruvbox',
 " 'colorscheme': 'ayu_dark',
 " 'colorscheme': 'simpleblack',
+" 'colorscheme': 'spaceway', "this is my custom lightline colorscheme
 
 let g:lightline = {
-      \ 'colorscheme': 'powerlineish',
+      \ 'colorscheme': 'spaceway',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'gitgutter', 'readonly', 'filename', 'modified' ] ],
       \   'right': [ [ 'lineinfo', 'syntastic' ],
-      \              [ 'percent', 'mytotallines' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype' ] ],
+      \              [ 'mytotallines' ],
+      \              [ 'percent' ],
+      \              [ 'charcode' ],
+      \              [ 'filetype' ] ],
       \ },
       \ 'component': {
       \   'lineinfo': '%3l:%-2v%<',
@@ -39,6 +42,7 @@ let g:lightline = {
       \   'gitgutter': 'LightLineGitGutter',
       \   'filename': 'FilenameForLightline',
       \   'mytotallines': 'MyTotalLines',
+      \   'charcode': 'LightlineCharcode'
       \ },
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '|', 'right': '|' }
@@ -89,6 +93,13 @@ function! LightLineGitGutter() abort
     return summary
   endif
   return ''
+endfunction
+
+function! LightlineCharcode() abort
+  let line = getline('.')
+  let col = col('.')
+  " return col - 1 < len(line) ? printf('U+%04x', char2nr(matchstr(line[(col - 1):], '^.'))) : ''
+  return col - 1 < len(line) ? printf('U+%04x', char2nr(matchstr(getline('.'), '\%' . col('.') . 'c.'))) : ''
 endfunction
 
 " " Show file path in lightline using vim fugitive
