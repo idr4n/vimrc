@@ -52,4 +52,5 @@ source $HOME/.vim/init/plug-config/vim-markdown.vim           " Plug 'plasticboy
 source $HOME/.vim/init/plug-config/vim-highlightedyank.vim    " Plug 'machakann/vim-highlightedyank'
 source $HOME/.vim/init/plug-config/lightline-vim.vim          " Plug 'itchyny/lightline.vim'
 source $HOME/.vim/init/plug-config/hexokinase-vim.vim         " Plug 'rrethy/vim-hexokinase'
+source $HOME/.vim/init/plug-config/vim-pencil.vim             " Plug 'reedes/vim-pencil'
 
