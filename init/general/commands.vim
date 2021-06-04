@@ -32,7 +32,7 @@ command! RunCommand call s:RunCommand()
 command! RunShellCmd call feedkeys(':!clear &&<space>')
 
 " Create/edit daily note
-command! EditDiary execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%F").".org"
+command! EditDiary execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%F").".md"
 
 " Create a new note in the Notes-Dabase directory
 command! NewNote call s:NewNote()
