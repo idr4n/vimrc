@@ -24,8 +24,7 @@ function! s:NewNote()
     echo 'No name entered!'
     return
   endif
-  " execute "e ~/Dropbox/Notes-Database/".s:name.".md"
-  execute "e ~/Dropbox/Notes-Database/".s:name.".org"
+  execute "e ~/Dropbox/Notes-Database/".s:name.".md"
 endfunction
 
 " Runs shell command
