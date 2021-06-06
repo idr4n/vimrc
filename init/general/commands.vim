@@ -37,17 +37,24 @@ command! EditDiary execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%
 " Create a new note in the Notes-Dabase directory
 command! NewNote call s:NewNote()
 
-" Open markdown file in Marked 2
-command! OpenMarked2 execute '!clear && open -a Marked\ 2 "%"'
-
-" Convert markdown file to pdf using pandoc
-command! MdToPdf execute '!clear && pandoc "%" -o "%:r.pdf"'
-
-" Convert markdown file to Beamer presentation using pandoc
-command! MdToBeamer execute '!clear && pandoc "%" -t beamer -o "%:r.pdf"'
-
-" Reveal file in finder without changing the working dir in vim
-command! RevealInFinder execute '!clear && open -R "%"'
+if has("nvim")
+  " Open markdown file in Marked 2
+  command! OpenMarked2 execute '!open -a Marked\ 2 "%"'
+  " Convert markdown file to pdf using pandoc
+  command! MdToPdf execute '!pandoc "%" -o "%:r.pdf"'
+  " Convert markdown file to Beamer presentation using pandoc
+  command! MdToBeamer execute '!pandoc "%" -t beamer -o "%:r.pdf"'
+  " Reveal file in finder without changing the working dir in vim
+  command! RevealInFinder execute 'silent !open -R "%"'
+  " Code Run Script
+  command! CodeRun execute '!~/scripts/code_run "%"'
+else
+  command! OpenMarked2 execute '!clear && open -a Marked\ 2 "%"'
+  command! MdToPdf execute '!clear && pandoc "%" -o "%:r.pdf"'
+  command! MdToBeamer execute '!clear && pandoc "%" -t beamer -o "%:r.pdf"'
+  command! RevealInFinder execute '!clear && open -R "%"'
+  command! CodeRun execute '!clear && ~/scripts/code_run "%"'
+endif
 
 " mappings
 nmap <leader>di :EditDiary<CR>
@@ -55,6 +62,7 @@ nnoremap <leader>; :RevealInFinder<CR>
 nnoremap <leader><S-n> :NewNote<CR>
 nnoremap <leader>cc :RunCommand<CR>
 nnoremap <leader>cl :RunShellCmd<CR>
+nnoremap <leader>cr :CodeRun<CR>
 
 augroup Commands
   autocmd!
