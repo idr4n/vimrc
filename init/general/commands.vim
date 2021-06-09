@@ -39,11 +39,11 @@ command! NewNote call s:NewNote()
 
 if has("nvim")
   " Open markdown file in Marked 2
-  command! OpenMarked2 execute '!open -a Marked\ 2 "%"'
+  command! OpenMarked2 execute 'silent !open -a Marked\ 2 "%"'
   " Convert markdown file to pdf using pandoc
-  command! MdToPdf execute '!pandoc "%" -o "%:r.pdf"'
+  command! MdToPdf execute 'silent !pandoc "%" -o "%:r.pdf"'
   " Convert markdown file to Beamer presentation using pandoc
-  command! MdToBeamer execute '!pandoc "%" -t beamer -o "%:r.pdf"'
+  command! MdToBeamer execute 'silent !pandoc "%" -t beamer -o "%:r.pdf"'
   " Reveal file in finder without changing the working dir in vim
   command! RevealInFinder execute 'silent !open -R "%"'
   " Code Run Script
