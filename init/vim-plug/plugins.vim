@@ -52,13 +52,15 @@ Plug 'dhruvasagar/vim-dotoo'
 
 "" Formatting
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 " Plug 'jiangmiao/auto-pairs'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'preservim/nerdcommenter'
+Plug 'tomtom/tcomment_vim'
 
 "" Actions, mappings
 Plug 'mattn/emmet-vim'

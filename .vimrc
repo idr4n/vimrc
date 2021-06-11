@@ -36,6 +36,7 @@ source $HOME/.vim/init/plug-config/vim-dotoo.vim            " Plug 'dhruvasagar/
 
 "" Formatting
 source $HOME/.vim/init/plug-config/vim-easy-align.vim       " Plug 'junegunn/vim-easy-align'
+source $HOME/.vim/init/plug-config/nerdcommenter.vim        " Plug 'preservim/nerdcommenter'
 
 "" Actions, mappings
 source $HOME/.vim/init/plug-config/emmet-vim.vim            " Plug 'mattn/emmet-vim'
