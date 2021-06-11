@@ -60,8 +60,8 @@ endif
 nmap <leader>di :EditDiary<CR>
 nnoremap <leader>; :RevealInFinder<CR>
 nnoremap <leader><S-n> :NewNote<CR>
-nnoremap <leader>cc :RunCommand<CR>
-nnoremap <leader>cl :RunShellCmd<CR>
+" nnoremap <leader>cc :RunCommand<CR>
+" nnoremap <leader>cl :RunShellCmd<CR>
 nnoremap <leader>cr :CodeRun<CR>
 
 augroup Commands

@@ -148,8 +148,8 @@ vmap <leader><s-f>  <Plug>(coc-format-selected)
 nmap <leader><s-f>  <Plug>(coc-format-selected)
 
 " coc-explorer
-map <silent> <C-n> :CocCommand explorer<CR>
-map <silent> <C-f> :CocCommand explorer --no-toggle<CR>
+" map <silent> <C-n> :CocCommand explorer<CR>
+" map <silent> <C-f> :CocCommand explorer --no-toggle<CR>
 
 function! s:coc_explorer_leave()
   if winwidth(0) > 150
