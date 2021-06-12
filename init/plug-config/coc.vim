@@ -153,10 +153,10 @@ nmap <leader><s-f>  <Plug>(coc-format-selected)
 
 function! s:coc_explorer_leave()
   if winwidth(0) > 150
-    setlocal numberwidth=20 foldcolumn=12
+    setlocal numberwidth=20 foldcolumn=9
     highlight FoldColumn guibg=b:bg_color guifg=b:bg_color
   elseif winwidth(0) > 120
-    setlocal numberwidth=10 foldcolumn=10
+    setlocal numberwidth=11 foldcolumn=9
     highlight FoldColumn guibg=b:bg_color
   elseif winwidth(0) > 85
     setlocal numberwidth=4 foldcolumn=0

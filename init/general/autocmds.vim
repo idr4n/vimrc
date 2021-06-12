@@ -25,10 +25,10 @@ augroup center_buffer
   " let g:win_count = winnr('$')
   " autocmd BufEnter,BufWinLeave,WinEnter,WinLeave,VimResized,VimEnter * if winwidth(0) > 160
   autocmd BufEnter,WinEnter,WinLeave,VimResized,VimEnter * if winwidth(0) > 150
-    \ |   setlocal numberwidth=20 foldcolumn=12
+    \ |   setlocal numberwidth=20 foldcolumn=9
     \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
     \ | elseif winwidth(0) > 120
-    \ |   setlocal numberwidth=10 foldcolumn=10
+    \ |   setlocal numberwidth=11 foldcolumn=9
     \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
     \ | elseif winwidth(0) > 85
     \ |   setlocal numberwidth=4 foldcolumn=0
