@@ -4,6 +4,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "cpp",
+    "go",
     "javascript",
     "javascriptreact",
     "typescript",
@@ -49,6 +50,11 @@
       "args": ["start"],
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
+    },
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"],
     }
   },
 }

@@ -19,6 +19,11 @@ augroup js_files
   autocmd FileType javascript inoremap ,= <space>=><space>
 augroup END
 
+" golang
+augroup js_files
+  autocmd FileType go setlocal shiftwidth=4 tabstop=4
+augroup END
+
 " " set numberwidth conditional on window width
 augroup center_buffer
   autocmd!
