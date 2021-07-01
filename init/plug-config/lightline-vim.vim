@@ -64,8 +64,8 @@ let g:lightline = {
 function! FilenameForLightline()
     " return expand('%')
     " return expand('%:~:h')
-    " return winwidth(0) > 70 ? expand('%:~:h') : pathshorten(fnamemodify(expand('%'), ":."))
-    return winwidth(0) > 150 ? expand('%:~:h') : pathshorten(fnamemodify(expand('%'), ":."))
+    " return winwidth(0) > 70 ? expand('%:~:p:h') : pathshorten(fnamemodify(expand('%'), ":."))
+    return winwidth(0) > 150 ? expand('%:~:p:h') : pathshorten(fnamemodify(expand('%'), ":~:p:h"))
     " return pathshorten(expand('%:~:h'))
 endfunction
 
