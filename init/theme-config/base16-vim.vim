@@ -11,7 +11,7 @@ set fillchars+=vert:│
 function! s:base16_customize() abort
   call Base16hi("Normal", "", "1D1F21", "", "", "", "") " Backgorund color
   " call Base16hi("LineNr", "585858", "181818", "236", "232", "", "")
-  call Base16hi("LineNr", "383838", "1D1F21", "236", "0", "", "")
+  call Base16hi("LineNr", "484848", "1D1F21", "236", "0", "", "")
   call Base16hi("CursorLineNr", "585858", "1D1F21", "", "", "none", "")
   call Base16hi("CursorLine", "", "171717", "", "", "", "")
   call Base16hi("Comment", "", "", "", "", "italic", "")
