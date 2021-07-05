@@ -13,9 +13,10 @@ let g:lightline#bufferline#modified = ' ●'
 " 'colorscheme': 'ayu_dark',
 " 'colorscheme': 'simpleblack',
 " 'colorscheme': 'spaceway', "this is my custom lightline colorscheme
+" 'colorscheme': 'spaceway_lighter', "this is my custom lightline colorscheme
 
 let g:lightline = {
-      \ 'colorscheme': 'spaceway',
+      \ 'colorscheme': 'spaceway_lighter',
       \ 'active': {
       \   'left': [ [ 'mode', 'spell', 'paste' ], 
       \             [ 'gitgutter', 'gitbranch', 'readonly' ],
@@ -63,8 +64,8 @@ let g:lightline = {
 function! FilenameForLightline()
     " return expand('%')
     " return expand('%:~:h')
-    " return winwidth(0) > 70 ? expand('%:~:h') : pathshorten(fnamemodify(expand('%'), ":."))
-    return winwidth(0) > 100 ? expand('%') : pathshorten(fnamemodify(expand('%'), ":."))
+    " return winwidth(0) > 70 ? expand('%:~:p:h') : pathshorten(fnamemodify(expand('%'), ":."))
+    return winwidth(0) > 150 ? expand('%:~:p:h') : pathshorten(fnamemodify(expand('%'), ":~:p:h"))
     " return pathshorten(expand('%:~:h'))
 endfunction
 

@@ -49,6 +49,7 @@ Plug 'honza/vim-snippets'
 Plug 'ferrine/md-img-paste.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'dhruvasagar/vim-dotoo'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 "" Formatting
 Plug 'tpope/vim-surround'
