@@ -76,6 +76,9 @@ nmap ,d <Plug>(coc-rename)
 xmap <leader>F  <Plug>(coc-format-selected)
 nmap <leader>F  <Plug>(coc-format-selected)
 
+" Use `:Format` to format current buffer
+command! -nargs=0 Format :call CocAction('format')
+
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).

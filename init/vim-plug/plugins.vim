@@ -97,6 +97,7 @@ Plug 'reedes/vim-pencil'
 Plug 'chriskempson/base16-vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'ivanddm/spaceway.vim'
+Plug 'sainnhe/gruvbox-material'
 " Plug 'kaicataldo/material.vim'
 
 

@@ -32,5 +32,6 @@ augroup on_change_colorschema
   autocmd ColorScheme * highlight VertSplit ctermbg=NONE guibg=NONE
 augroup END
 let base16colorspace=256
-colorscheme base16-default-dark
+" colorscheme base16-default-dark
+colorscheme base16-gruvbox-dark-hard
 
