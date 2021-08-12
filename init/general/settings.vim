@@ -5,7 +5,7 @@ filetype plugin indent on
 
 set hidden
 set t_Co=256
-set background=dark
+" set background=dark
 " syntax on                           " enable syntax highlighting
 syntax enable                         " enable syntax highlighting
 set number                            " sets absolute line numbers
