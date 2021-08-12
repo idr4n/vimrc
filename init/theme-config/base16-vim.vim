@@ -12,15 +12,15 @@ function! s:base16_customize() abort
   " call Base16hi("Normal", "", "1D1F21", "", "", "", "") " Backgorund color
   " call Base16hi("LineNr", "585858", "181818", "236", "232", "", "")
   " call Base16hi("LineNr", "484848", "1D1F21", "236", "0", "", "")
-  call Base16hi("LineNr", "484848", g:base16_gui00, "236", "0", "", "")
+  " call Base16hi("LineNr", "484848", g:base16_gui00, "236", "0", "", "")
   " call Base16hi("CursorLineNr", "585858", "1D1F21", "", "", "none", "")
-  call Base16hi("CursorLineNr", "585858", g:base16_gui00, "", "", "none", "")
+  " call Base16hi("CursorLineNr", "585858", g:base16_gui00, "", "", "none", "")
   " call Base16hi("CursorLine", "", "171717", "", "", "", "")
   call Base16hi("Comment", "", "", "", "", "italic", "")
   " call Base16hi("SignColumn", "", "1D1F21", "", "0", "", "")
-  call Base16hi("SignColumn", "", g:base16_gui00, "", "0", "", "")
+  " call Base16hi("SignColumn", "", g:base16_gui00, "", "0", "", "")
   call Base16hi("NonText", "5c5c5c", "", "", "", "none", "")
-  call Base16hi("ColorColumn", "", "873936", "", "", "", "")
+  " call Base16hi("ColorColumn", "", "873936", "", "", "", "")
   call Base16hi("Error", "c8c8c8", "", "", "", "", "")
   call Base16hi("SpellBad",   "873936", "", "", "", "undercurl", "")
   call Base16hi("SpellLocal", "873936", "", "", "", "undercurl", "")
@@ -44,8 +44,10 @@ let base16colorspace=256
 
 if strftime("%H") >= 7 && strftime("%H") < 19
   " set background=light
-  " colorscheme base16-solarized-light
-  colorscheme base16-github
+  " colorscheme base16-gruvbox-light-hard
+  colorscheme base16-solarized-light
+  " colorscheme base16-atelier-dune-light
+  " colorscheme base16-github
 else
   " set background=dark
   colorscheme base16-gruvbox-dark-hard

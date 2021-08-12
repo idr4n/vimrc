@@ -15,8 +15,16 @@ let g:lightline#bufferline#modified = ' ●'
 " 'colorscheme': 'spaceway', "this is my custom lightline colorscheme
 " 'colorscheme': 'spaceway_lighter', "this is my custom lightline colorscheme
 
+if strftime("%H") >= 7 && strftime("%H") < 19
+  " let s:color = 'solarized'
+  let s:color = 'spacewaylight'
+  " set background=light
+else
+  let s:color = 'spaceway_lighter'
+endif
+
 let g:lightline = {
-      \ 'colorscheme': 'spaceway_lighter',
+      \ 'colorscheme': s:color,
       \ 'active': {
       \   'left': [ [ 'mode', 'spell', 'paste' ], 
       \             [ 'gitgutter', 'gitbranch', 'readonly' ],

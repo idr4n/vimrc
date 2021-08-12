@@ -30,18 +30,33 @@ augroup center_buffer
   " let g:win_count = winnr('$')
   " autocmd BufEnter,BufWinLeave,WinEnter,WinLeave,VimResized,VimEnter * if winwidth(0) > 160
   autocmd BufEnter,WinEnter,WinLeave,VimResized,VimEnter * if winwidth(0) > 150
-    \ |   setlocal numberwidth=20 foldcolumn=9
-    \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
-    \ | elseif winwidth(0) > 120
-    \ |   setlocal numberwidth=11 foldcolumn=9
-    \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
-    \ | elseif winwidth(0) > 85
-    \ |   setlocal numberwidth=4 foldcolumn=0
-    \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
-    \ | else
-    \ |   setlocal numberwidth=3 foldcolumn=0
-    \ | endif
+        \ |   setlocal numberwidth=20 foldcolumn=9
+        \ | elseif winwidth(0) > 120
+        \ |   setlocal numberwidth=11 foldcolumn=9
+        \ | elseif winwidth(0) > 85
+        \ |   setlocal numberwidth=4 foldcolumn=0
+        \ | else
+        \ |   setlocal numberwidth=3 foldcolumn=0
+        \ | endif
 augroup END
+" " set numberwidth conditional on window width
+" augroup center_buffer
+"   autocmd!
+"   " let g:win_count = winnr('$')
+"   " autocmd BufEnter,BufWinLeave,WinEnter,WinLeave,VimResized,VimEnter * if winwidth(0) > 160
+"   autocmd BufEnter,WinEnter,WinLeave,VimResized,VimEnter * if winwidth(0) > 150
+"     \ |   setlocal numberwidth=20 foldcolumn=9
+"     \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
+"     \ | elseif winwidth(0) > 120
+"     \ |   setlocal numberwidth=11 foldcolumn=9
+"     \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
+"     \ | elseif winwidth(0) > 85
+"     \ |   setlocal numberwidth=4 foldcolumn=0
+"     \ |   exec printf('highlight FoldColumn guibg=%s', synIDattr(hlID("Normal"), 'bg', 'gui'))
+"     \ | else
+"     \ |   setlocal numberwidth=3 foldcolumn=0
+"     \ | endif
+" augroup END
 
 " Autospelling for tex and md files
 augroup spell_tex_md
