@@ -92,6 +92,7 @@ Plug 'itchyny/lightline.vim'
 " Plug 'mengelbrecht/lightline-bufferline'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'reedes/vim-pencil'
+Plug 'leafOfTree/vim-svelte-plugin'
 
 "" Themes
 Plug 'chriskempson/base16-vim'
