@@ -12,11 +12,15 @@
     "graphql",
     "html",
     "yaml",
-    "json"
+    "json",
+    "vue",
+    "svelte"
   ],
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   "suggest.autoTrigger": "always",
   "signature.enable": false,
+  // vetur
+  "vetur.experimental.templateInterpolationService": true,
 
   // python config
   // "python.linting.pylintEnabled": true,

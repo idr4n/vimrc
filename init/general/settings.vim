@@ -5,13 +5,13 @@ filetype plugin indent on
 
 set hidden
 set t_Co=256
-set background=dark
+" set background=dark
 " syntax on                           " enable syntax highlighting
 syntax enable                         " enable syntax highlighting
 set number                            " sets absolute line numbers
 " set relativenumber                  " sets relative line numbers
 set termguicolors                     " uses highlight-guifg and highlight-guibg attributes in the terminal
-" set cursorline                        " highlight current line
+set cursorline                        " highlight current line
 set mouse=a                           " Enable your mouse
 set wrap                              " Always wrap long lines
 set linebreak                         " Always wrap long lines
