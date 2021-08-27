@@ -50,5 +50,6 @@ if strftime("%H") >= 7 && strftime("%H") < 19
   " colorscheme base16-github
 else
   " set background=dark
-  colorscheme base16-gruvbox-dark-hard
+  colorscheme base16-default-dark
+  " colorscheme base16-gruvbox-dark-hard
 endif
