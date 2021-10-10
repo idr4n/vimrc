@@ -15,7 +15,7 @@ let g:lightline#bufferline#modified = ' ●'
 " 'colorscheme': 'spaceway', "this is my custom lightline colorscheme
 " 'colorscheme': 'spaceway_lighter', "this is my custom lightline colorscheme
 
-if strftime("%H") >= 7 && strftime("%H") < 19
+if strftime("%H") >= 7 && strftime("%H") < 19 && $TERM_PROGRAM == 'iTerm.app'
   " let s:color = 'solarized'
   let s:color = 'spacewaylight'
   " set background=light

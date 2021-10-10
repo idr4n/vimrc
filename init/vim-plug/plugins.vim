@@ -32,6 +32,9 @@ if !has("nvim")
 endif
 if has("nvim")
   Plug 'phaazon/hop.nvim'
+  " Telescope
+  Plug 'nvim-lua/plenary.nvim' " needed for Telescope below!
+  Plug 'nvim-telescope/telescope.nvim'
 endif
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
@@ -85,7 +88,7 @@ Plug 'yuezk/vim-js'
 
 "" Appearance, syntax highlighting
 Plug 'junegunn/goyo.vim'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
 Plug 'machakann/vim-highlightedyank'
 Plug 'itchyny/lightline.vim'
