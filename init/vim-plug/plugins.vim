@@ -34,6 +34,8 @@ if has("nvim")
   Plug 'phaazon/hop.nvim'
   " Telescope
   Plug 'nvim-lua/plenary.nvim' " needed for Telescope below!
+  Plug 'fannheyward/telescope-coc.nvim'
+  Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
   Plug 'nvim-telescope/telescope.nvim'
 endif
 Plug 'justinmk/vim-dirvish'
