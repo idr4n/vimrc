@@ -6,9 +6,18 @@ nnoremap <C-t> <cmd>Telescope oldfiles<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fk <cmd>Telescope keymaps<cr>
+
+" Telescope-coc
+nnoremap <leader>fd <cmd>Telescope coc document_symbols<cr>
+nnoremap <leader>ff <cmd>Telescope coc definitions<cr>
+nnoremap <leader>fw <cmd>Telescope coc workspace_symbols<cr>
+nnoremap <leader>fr <cmd>Telescope coc references<cr>
+nnoremap <leader>fa <cmd>Telescope coc file_code_actions<cr>
 
 lua << EOF
 local actions = require('telescope.actions')
+
 require('telescope').setup({
   defaults = {
     -- layout_strategy = 'vertical',
@@ -33,4 +42,7 @@ require('telescope').setup({
     },
   },
 })
+
+require('telescope').load_extension('coc')
+require('telescope').load_extension('fzf')
 EOF

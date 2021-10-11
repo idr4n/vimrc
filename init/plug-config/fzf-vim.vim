@@ -17,14 +17,14 @@ let g:fzf_action = {
 
 nmap ,<tab> <plug>(fzf-maps-n)
 xmap ,<tab> <plug>(fzf-maps-xQwk)
-nnoremap <silent> <expr> <leader>ff (expand('%') =~ 'coc-explorer' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
-nnoremap <silent> <expr> <leader>ft (expand('%') =~ 'coc-explorer' ? "\<c-w>\<c-w>" : '').":History\<cr>"
+" nnoremap <silent> <expr> <leader>ff (expand('%') =~ 'coc-explorer' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
+" nnoremap <silent> <expr> <leader>ft (expand('%') =~ 'coc-explorer' ? "\<c-w>\<c-w>" : '').":History\<cr>"
 " nnoremap <silent> <expr> <C-P> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
 " nnoremap <silent> <expr> <C-T> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":History\<cr>"
-nnoremap <silent> <expr> <leader>fb (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
-nnoremap <silent> <expr> <leader>bl (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
-nnoremap <silent> <expr> <leader>fs (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":BLines\<cr>"
-nnoremap <silent> <expr> <leader>r (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Rg\<cr>"
+" nnoremap <silent> <expr> <leader>fb (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
+" nnoremap <silent> <expr> <leader>bl (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
+" nnoremap <silent> <expr> <leader>fs (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":BLines\<cr>"
+" nnoremap <silent> <expr> <leader>r (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Rg\<cr>"
 " nmap <C-P>          :Files<CR>
 " nmap <C-T>          :History<CR>
 " nmap <leader>bl     :Buffers<CR>
