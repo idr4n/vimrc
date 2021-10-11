@@ -7,6 +7,9 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fk <cmd>Telescope keymaps<cr>
+nnoremap <leader>fb <cmd>Telescope file_browser<cr>
+nnoremap <leader>fs :Telescope grep_string search=
+nnoremap <leader>fi <cmd>Telescope git_status<cr>
 
 " Telescope-coc
 nnoremap <leader>fd <cmd>Telescope coc document_symbols<cr>
