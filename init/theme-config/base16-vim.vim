@@ -59,9 +59,9 @@ if strftime("%H") >= 7 && strftime("%H") < 19 && $TERM_PROGRAM == 'iTerm.app'
     autocmd!
     autocmd ColorScheme * call s:base16_customize_light()
   augroup END
-  colorscheme base16-solarized-light
+  " colorscheme base16-solarized-light
+  colorscheme base16-one-light
   " colorscheme base16-atelier-dune-light
-  " colorscheme base16-github
 else
   " set background=dark
   augroup on_change_color
