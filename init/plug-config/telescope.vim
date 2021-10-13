@@ -10,6 +10,7 @@ nnoremap <leader>fk <cmd>Telescope keymaps<cr>
 nnoremap <leader>fb <cmd>Telescope file_browser<cr>
 nnoremap <leader>fs :Telescope grep_string search=
 nnoremap <leader>fi <cmd>Telescope git_status<cr>
+nnoremap <leader>f. <cmd>Telescope find_files find_command=rg,--files,--hidden,--iglob,!.git<cr>
 
 " Telescope-coc
 nnoremap <leader>fd <cmd>Telescope coc document_symbols<cr>
