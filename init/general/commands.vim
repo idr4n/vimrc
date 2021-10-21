@@ -32,7 +32,7 @@ command! RunCommand call s:RunCommand()
 command! RunShellCmd call feedkeys(':!clear &&<space>')
 
 " Create/edit daily note
-command! EditDiary execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%F").".md"
+command! TodayNote execute "e ~/Dropbox/Notes-Database/Daily-Notes/".strftime("%F").".md"
 
 " Create a new note in the Notes-Dabase directory
 command! NewNote call s:NewNote()
@@ -57,7 +57,7 @@ else
 endif
 
 " mappings
-nmap <leader>di :EditDiary<CR>
+nmap <leader>to :TodayNote<CR>
 nnoremap <leader>; :RevealInFinder<CR>
 nnoremap <leader><S-n> :NewNote<CR>
 " nnoremap <leader>cc :RunCommand<CR>
