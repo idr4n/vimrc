@@ -52,7 +52,7 @@ let base16colorspace=256
 " colorscheme base16-solarized-light
 " colorscheme base16-github
 
-if strftime("%H") >= 7 && strftime("%H") < 19 && $TERM_PROGRAM == 'iTerm.app'
+if strftime("%H") >= 7 && strftime("%H") < 19 && ($TERM_PROGRAM == 'iTerm.app' || $TERM_PROGRAM == 'tmux')
   " set background=light
   " colorscheme base16-gruvbox-light-hard
   augroup on_change_color
