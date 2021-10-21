@@ -37,6 +37,7 @@ if has("nvim")
   Plug 'fannheyward/telescope-coc.nvim'
   Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'folke/todo-comments.nvim'
 endif
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
