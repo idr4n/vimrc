@@ -12,5 +12,5 @@ EOF
 " todos in curreent directory
 nnoremap <leader>tt <cmd>TodoTelescope<cr>
 " todos in Notes-Database
-nnoremap <leader>tn <cmd>TodoTelescope cwd=~/Dropbox/Notes-Database<cr> 
+nnoremap <leader>tn <cmd>TodoTelescope cwd=~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Notes-Database<cr>TODO
 
