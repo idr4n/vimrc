@@ -40,6 +40,8 @@ command! NewNote call s:NewNote()
 if has("nvim")
   " Open markdown file in Marked 2
   command! OpenMarked2 execute 'silent !open -a Marked\ 2 "%"'
+  " Open markdown in Deckset
+  command! OpenDeckset execute 'silent !open -a Deckset "%"'
   " Convert markdown file to pdf using pandoc
   command! MdToPdf execute 'silent !pandoc "%" -o "%:r.pdf"'
   " Convert markdown file to Beamer presentation using pandoc
@@ -67,6 +69,7 @@ nnoremap <leader>cr :CodeRun<CR>
 augroup Commands
   autocmd!
   autocmd FileType markdown nnoremap <buffer> <F5> :OpenMarked2<CR>
+  autocmd FileType markdown nnoremap <buffer> <leader>D :OpenDeckset<CR>
   autocmd FileType markdown nnoremap <buffer> <S-F5> :MdToPdf<CR>
   autocmd FileType markdown nnoremap <buffer> <leader>pb :MdToBeamer<CR>
 augroup END
