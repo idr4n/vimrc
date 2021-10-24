@@ -32,12 +32,14 @@ if !has("nvim")
 endif
 if has("nvim")
   Plug 'phaazon/hop.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'folke/trouble.nvim'
+  Plug 'folke/todo-comments.nvim'
   " Telescope
   Plug 'nvim-lua/plenary.nvim' " needed for Telescope below!
   Plug 'fannheyward/telescope-coc.nvim'
   Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
   Plug 'nvim-telescope/telescope.nvim'
-  Plug 'folke/todo-comments.nvim'
 endif
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
