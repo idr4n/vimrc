@@ -1,7 +1,8 @@
 " Toggles GoYo
 
 let g:goyo_height = 100
-let g:goyo_linenr = 1
+let g:goyo_width = 75
+let g:goyo_linenr = 0
 
 " nmap <leader>c :Goyo<CR>:highlight LineNr ctermfg=240<CR>
 nmap <leader>gg :Goyo<CR>

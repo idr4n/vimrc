@@ -11,21 +11,21 @@ function! s:PythonWatch()
   endif
 endfunction
 
-function! s:LazyGit()
+function! s:GitUI()
   if exists('$TMUX')
-    execute 'silent !tmux split-window -v -p 70 lazygit'
+    execute 'silent !tmux split-window -v -p 70 gitui'
   elseif has('nvim')
-    bel 20sp +startinsert | terminal lazygit
+    bel 25sp +startinsert | terminal gitui
   else
     " echohl WarningMsg | echo 'Not running inside a TMUX sessions!' | echohl None
-    bel terminal ++close ++norestore ++rows=20 lazygit
+    bel terminal ++close ++norestore ++rows=25 gitui
     doautocmd User TmuxCommands
   endif
 endfunction
 
-function! s:LazyGitWindow()
+function! s:GitWindow()
   if exists('$TMUX')
-    execute '!tmux new-window lazygit'
+    execute '!tmux new-window gitui'
   else
     echohl WarningMsg | echo 'Not running inside a TMUX sessions!' | echohl None
   endif
@@ -48,11 +48,11 @@ autocmd! User TmuxCommands set laststatus=0 noshowmode noruler
 
 " Commands
 command! PythonWatch call s:PythonWatch()
-command! LazyGit call s:LazyGit()
-command! LazyGitWindow call s:LazyGitWindow()
+command! GitUI call s:GitUI()
+command! GitWindow call s:GitWindow()
 
 " mappings
 " nmap <leader>wp :call <SID>PythonWatch()<CR>
 nmap <leader>wp :PythonWatch<CR>
-nmap <leader>lg :LazyGit<CR>
-nmap <leader>lw :LazyGitWindow<CR>
+nmap <leader>gi :GitUI<CR>
+nmap <leader>gw :GitWindow<CR>
