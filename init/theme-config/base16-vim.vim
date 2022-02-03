@@ -8,6 +8,8 @@ set fillchars+=vert:│
 " gsed -ri '/Italic/ s/^([^,]*,){5} "(none)?/\1 "italic/' *vim
 " gsed -ri '/Bold/ s/^([^,]*,){5} "(none)?/\1 "bold/' *vim
 
+set numberwidth=3
+
 function! s:base16_customize_light() abort
   call Base16hi("Comment", "", "", "", "", "italic", "")
   call Base16hi("NonText", "5c5c5c", "", "", "", "none", "")
