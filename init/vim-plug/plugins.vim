@@ -33,13 +33,14 @@ endif
 if has("nvim")
   Plug 'phaazon/hop.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
-  Plug 'folke/trouble.nvim'
-  Plug 'folke/todo-comments.nvim'
-  " Telescope
+  " Plug 'folke/trouble.nvim'
+  " Plug 'folke/todo-comments.nvim'
+  " " Telescope
   Plug 'nvim-lua/plenary.nvim' " needed for Telescope below!
   Plug 'fannheyward/telescope-coc.nvim'
   Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
   Plug 'nvim-telescope/telescope.nvim'
+  " Plug 'github/copilot.vim'
 endif
 Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
@@ -61,15 +62,15 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 "" Formatting
 Plug 'tpope/vim-surround'
-" Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 " Plug 'jiangmiao/auto-pairs'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'michaeljsmith/vim-indent-object'
-Plug 'preservim/nerdcommenter'
-Plug 'tomtom/tcomment_vim'
+" Plug 'preservim/nerdcommenter'
+" Plug 'tomtom/tcomment_vim'
 
 "" Actions, mappings
 Plug 'mattn/emmet-vim'
